@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers Dashboard</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <style>
+        *{
+            
+            margin: 0px;
+        }
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: black;
+        }
+        
+        li {
+          float: left;
+        
+        }
+        
+        li:last-child {
+          border-right: none;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+        h1{
+            margin-left: 20px; 
+            margin-bottom: 10px;
+        }
+       h2{
+        /* font-family: "Trirong", serif; */
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 39px;
+        margin-left: 20px;
+       } 
+       input{
+        /* padding: 10px 150px 0px 0px ; */
+        margin-left: 20px;
+        padding-right: 50%;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #000000;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+       }
+       button{
+        margin-left: 20px;
+        padding: 10px 20px 10px 20px;
+        background-color: black;
+        color: white;
+       }
+       .hide
+        {
+         display: none;
+        }
+        #alert
+        {
+       background-color: lightseagreen;
+       color: red;
+       margin: 10px 0 0 10px;
+       font-size: 20px;
+       padding: 10px;
+       border: 1px solid darkgray;
+       width:30%;
+       font-weight: 700;
+     }
+
+
+        
+        </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="index.html">Teacher Portal</a></li>
+        
+        <li style="float:right"><a href="Login.html">Login</a></li>
+        <li style="float:right"><a href="index.html">Signup</a></li>
+      </ul>
+      <br> 
+      <h1>Teachers Dashboard</h1>
+      <h2 id="username">Welcome back </h2>
+      <h2 id="useremailid">Your Email ID : </h2>
+      <h1>Change Password</h1>
+
+      <form id="changepassrd">
+        
+        
+        <input type="password" name="" placeholder="Old Password"id="oldpass"> <br>
+        <input type="password" name="" placeholder="New Password"id="newpass"> <br>
+        <input type="password" name="" placeholder="Confirm New Password" id="conpass"> <br>
+        <button>Change</button>
+         <br> <br>
+        <button id="logout">Logout</button>
+        <div class="hide" id="alert"> </div>
+      </form>
+      <script src="teacherdashb.js"></script>
+</body>
+</html>
